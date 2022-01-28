@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcLexicon", "CalcLexicon.csproj", "{6F2ED51D-686A-436D-B460-95699FC7EBE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectCalc", "..\TestProjectCalc\TestProjectCalc.csproj", "{CD06D271-EF42-4671-B6A2-E41855A4C1B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectCalc", "..\TestProjectCalc\TestProjectCalc.csproj", "{CD06D271-EF42-4671-B6A2-E41855A4C1B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

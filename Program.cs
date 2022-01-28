@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using System.IO;
 namespace CalcLexicon
 {
     public class Program
@@ -193,28 +194,28 @@ namespace CalcLexicon
         }
         public static double Div(double firstNumber, double secondNumber)
         {
-            
-            if ( secondNumber == 0)
+            int tot = 0;
+            int tal = 0;
+            int talf = 0;
+            while( secondNumber == 0 && tal == 0)
             {
-                
-                while ( secondNumber == 0)
+               
+                tal = (int)Math.Floor(secondNumber);
+                talf = (int)Math.Floor(firstNumber);
+                try
                 {
-                   
-                    Console.WriteLine("Du försöker dela med 0 som är ogiltligt, välj ett annat tal");
-                   
-                    secondNumber = getNumber();
+                    tot = talf / tal;
                 }
+                catch(DivideByZeroException e)
+                {
+                    Console.WriteLine("Fel värde, få inte dela med 0" + e);
+                    Console.WriteLine("slå in ett nytt värde som inte är 0");
+                }
+                secondNumber = getNumber();
             }
-            if( secondNumber!= 0)
-            {
-                Result = firstNumber / secondNumber;
-            }
-            
+            Result = firstNumber / secondNumber;
             return Result;
-                       
-            
-            //Result = firstNumber / secondNumber;
-            //return Result;
+         
         }
 
 
